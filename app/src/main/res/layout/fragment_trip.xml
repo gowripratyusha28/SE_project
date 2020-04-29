@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".activities.TripFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip" />
+
+    <CheckBox
+        android:id="@+id/place1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="R.K.Beach"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/place2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Simhachalam"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/place3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Yarada Beach"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/place4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Kailasgiri Hilll Park"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/place5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Kambalakonda Wild Life Sanctuary"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/place6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Indira Gandhi Zoological Park"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/place7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Rishikonda Beach"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/place8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="Vuda Park"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/place9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="City Central Park"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+</LinearLayout>
