@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FeedbackFragment"
+    android:padding="30dp"
+    android:background="#EFEBE9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To fill feedback about place"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:textColor="#AD1457"/>
+
+        <!-- category -->
+        <LinearLayout
+            android:id="@+id/container_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="Place name"
+                android:textColor="#000000"
+                style="@style/CategoryStyle"
+                android:textSize="18sp"/>
+
+            <!-- Input field -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- Gender drop-down spinner -->
+                <Spinner
+                    android:id="@+id/spinner_place"
+                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/feedback_about_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Feedback about places"
+            android:background="#F5F5F5"
+            android:inputType="textCapWords|textMultiLine"
+            android:maxLength="170"
+            android:maxLines="4"
+            android:paddingLeft="15dp"
+            android:paddingBottom="60dp"
+            android:singleLine="false"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General Feedback"
+            android:textSize="15sp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#AD1457"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_the_app"
+            android:layout_marginBottom="20dp"/>
+
+
+
+        <EditText
+            android:id="@+id/general_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:hint="General feedback"
+            android:inputType="textCapWords|textMultiLine"
+            android:maxLength="170"
+            android:textSize="15sp"
+            android:maxLines="4"
+            android:paddingLeft="15dp"
+            android:paddingBottom="60dp"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/submit_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:background="#4e0d3a"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</ScrollView>
