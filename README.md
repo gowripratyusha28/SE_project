@@ -26,4 +26,6 @@ Either Steps - 6,7,8 or Steps - 9,10 can be done.
 
 11. If RSA Cryptography key is shown then select OK. (In mobile)
 12. Run the project. (In laptop)
+
 The app will be installed in Mobile.
+Name of the app - Travel With Us
