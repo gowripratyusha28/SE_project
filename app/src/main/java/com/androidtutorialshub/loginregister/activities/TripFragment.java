@@ -11,17 +11,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
-import android.widget.TextView;
 
 import com.androidtutorialshub.loginregister.R;
 
-import org.w3c.dom.Text;
-
-import java.util.InputMismatchException;
-import java.util.Scanner;
 import java.util.Stack;
 
 
@@ -52,7 +45,7 @@ public class TripFragment extends Fragment {
 
 
     public String placenames[] = {"","RamaKrishna Beach", "Simhachalam", "Yarada Beach", "Kailasgiri Hill Park", "Kambalakonda Wild Life Sanctuary",
-            "Indira Gandhi Zoological Park", "RushiKonda Beach", "Vuda Park", "City Central Park", "CMR Central Mall", "TU 142 Air Craft Museum" };
+            "Indira Gandhi Zoological Park", "RushiKonda Beach", "Vuda Park", "City Central Park", "CMR Central Mall", "TU 142 Air Craft Museum", "Dolphins Nose" };
 
         @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
@@ -67,8 +60,8 @@ public class TripFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
-                int[] isplace = new int[12];
-                boolean[] hasplace = new boolean[12];
+                int[] isplace = new int[13];
+                boolean[] hasplace = new boolean[13];
                 CheckBox place1 = (CheckBox) view.findViewById(R.id.place1);
                 hasplace[1] = place1.isChecked();
                 place1.setChecked(false);
@@ -102,35 +95,40 @@ public class TripFragment extends Fragment {
                 CheckBox place11 = (CheckBox) view.findViewById(R.id.place11);
                 hasplace[11] = place11.isChecked();
                 place11.setChecked(false);
+                CheckBox place12 = (CheckBox) view.findViewById(R.id.place12);
+                hasplace[12] = place12.isChecked();
+                place12.setChecked(false);
                 int[][] cost_matrix = {
-                        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                        {0, 0, 468, 407, 270, 474, 200, 266, 121, 111, 125, 75},
-                        {0, 468, 0, 707, 462, 354, 369, 450, 406, 421, 398, 448},
-                        {0, 407, 707, 0, 629, 729, 577, 620, 453, 376, 409, 419},
-                        {0, 270, 462, 629, 0, 497, 200, 259, 216, 255, 210, 240},
-                        {0, 474, 354, 729, 497, 0, 393, 489, 436, 458, 395, 452},
-                        {0, 200, 369, 577, 200, 393, 0, 147, 160, 177, 134, 183},
-                        {0, 266, 450, 620, 259, 489, 147, 0, 202, 278, 216, 231},
-                        {0, 121, 406, 453, 216, 436, 160, 202, 0, 130, 106, 94},
-                        {0, 111, 421, 376, 255, 458, 177, 278, 130, 0, 110, 115},
-                        {0, 125, 398, 409, 210, 395, 134, 216, 106, 110, 0, 117},
-                        {0, 75, 448, 419, 240, 452, 183, 231, 94, 115, 117, 0}
+                        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                        {0, 0, 468, 407, 270, 474, 200, 266, 121, 111, 125, 75, 399},
+                        {0, 468, 0, 707, 462, 354, 369, 450, 406, 421, 398, 448, 673},
+                        {0, 407, 707, 0, 629, 729, 577, 620, 453, 376, 409, 419, 131},
+                        {0, 270, 462, 629, 0, 497, 200, 259, 216, 255, 210, 240, 558},
+                        {0, 474, 354, 729, 497, 0, 393, 489, 436, 458, 395, 452, 686},
+                        {0, 200, 369, 577, 200, 393, 0, 147, 160, 177, 134, 183, 468},
+                        {0, 266, 450, 620, 259, 489, 147, 0, 202, 278, 216, 231, 570},
+                        {0, 121, 406, 453, 216, 436, 160, 202, 0, 130, 106, 94, 416},
+                        {0, 111, 421, 376, 255, 458, 177, 278, 130, 0, 110, 115, 342},
+                        {0, 125, 398, 409, 210, 395, 134, 216, 106, 110, 0, 117, 378},
+                        {0, 75, 448, 419, 240, 452, 183, 231, 94, 115, 117, 0, 398},
+                        {0, 399, 673, 131, 558, 686, 468, 570, 416, 342, 378, 398, 0}
                 };
                 int[][] time_matrix = {
-                        {0, 0, 0, 0, 0 ,0 ,0 ,0 ,0 ,0, 0, 0},
-                        {0, 0, 30, 40, 21, 38, 16, 23, 9, 8, 9, 4},
-                        {0, 30, 0, 72, 28, 26, 24, 34, 27, 27, 26, 30},
-                        {0, 40, 72, 0, 64, 81, 57, 68, 41, 34, 37, 39},
-                        {0, 21, 28, 64, 0, 37, 12, 19, 15, 18, 15, 17},
-                        {0, 38, 26, 81, 37, 0, 31, 40, 34, 36, 34, 39},
-                        {0, 16, 24, 57, 12, 31, 0, 12, 14, 14, 11, 16},
-                        {0, 23, 34, 68, 19, 40, 12, 0, 17, 23, 21, 20},
-                        {0, 9, 27, 41, 15, 34, 14, 17, 0, 10, 8, 4},
-                        {0, 8, 27, 34, 18, 36, 14, 23, 10, 0, 5, 8},
-                        {0, 9, 26, 37, 15, 34, 11, 21, 8, 5, 0, 9},
-                        {0, 4, 30, 39, 17, 39, 16, 20, 4, 8, 9, 0}
+                        {0, 0, 0, 0, 0 ,0 ,0 ,0 ,0 ,0, 0, 0, 0},
+                        {0, 0, 30, 40, 21, 38, 16, 23, 9, 8, 9, 4, 38},
+                        {0, 30, 0, 72, 28, 26, 24, 34, 27, 27, 26, 30, 66},
+                        {0, 40, 72, 0, 64, 81, 57, 68, 41, 34, 37, 39, 12},
+                        {0, 21, 28, 64, 0, 37, 12, 19, 15, 18, 15, 17, 56},
+                        {0, 38, 26, 81, 37, 0, 31, 40, 34, 36, 34, 39, 75},
+                        {0, 16, 24, 57, 12, 31, 0, 12, 14, 14, 11, 16, 42},
+                        {0, 23, 34, 68, 19, 40, 12, 0, 17, 23, 21, 20, 58},
+                        {0, 9, 27, 41, 15, 34, 14, 17, 0, 10, 8, 4, 37},
+                        {0, 8, 27, 34, 18, 36, 14, 23, 10, 0, 5, 8, 31},
+                        {0, 9, 26, 37, 15, 34, 11, 21, 8, 5, 0, 9, 35},
+                        {0, 4, 30, 39, 17, 39, 16, 20, 4, 8, 9, 0, 37},
+                        {0, 38, 66, 12, 56, 75, 42, 58, 37, 31, 35, 37, 0}
                 };
-                int[][] adjacency_matrix = new int[12][12];
+                int[][] adjacency_matrix = new int[13][13];
                 if(mCategory == 2){
                     adjacency_matrix = cost_matrix;
                 }
@@ -138,9 +136,9 @@ public class TripFragment extends Fragment {
                     adjacency_matrix = time_matrix;
                 }
                 int i,j=1;
-                int completed[] = new int[12];
+                int completed[] = new int[13];
                 int num_of_nodes = 0;
-                for(i=1;i<12;i++){
+                for(i=1;i<13;i++){
                     completed[i] = 0;
                     if(hasplace[i]) {
                         isplace[i] = 1;
@@ -149,7 +147,7 @@ public class TripFragment extends Fragment {
                     else isplace[i] = 0;
                 }
                 int nodes[] = new int[num_of_nodes+1];
-                for(i=1;i<12;i++){
+                for(i=1;i<13;i++){
                     if(isplace[i] == 1){
                         nodes[j] = i;
                         j++;
@@ -224,7 +222,6 @@ public class TripFragment extends Fragment {
 
             message1 += placenames[nodes[city]] + "\n";
             //System.out.print(nodes[city]);
-            //cout << city + 1 << "--->";
             ncity = least(city, ary,completed,num_of_nodes);
 
             if (ncity == 999) return;

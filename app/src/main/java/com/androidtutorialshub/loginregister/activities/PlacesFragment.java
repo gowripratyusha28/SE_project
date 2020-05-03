@@ -53,7 +53,8 @@ public class PlacesFragment extends Fragment {
         words.add(new Word("Vuda Park",R.drawable.vuda1));
         words.add(new Word("City Central Park",R.drawable.ccp2));
         words.add(new Word("CMR Central",R.drawable.cmr1));
-        words.add(new Word("TU 142 Air Craft Museum",R.drawable.air1));
+        words.add(new Word("Air Craft Museum",R.drawable.air1));
+        words.add(new Word("Dolphins Nose",R.drawable.dol2));
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
         WordAdapter adapter = new WordAdapter(getActivity(), words);

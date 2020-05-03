@@ -169,9 +169,19 @@
             android:id="@+id/place11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="10dp"
             android:paddingLeft="24dp"
             android:text="TU 142 Air Craft Mueseum"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:id="@+id/place12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="24dp"
+            android:text="Dolphins Nose"
             android:textSize="18sp"
             android:textStyle="italic" />
 

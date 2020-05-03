@@ -10,7 +10,7 @@ import com.androidtutorialshub.loginregister.R;
 public class Place1Activity extends AppCompatActivity {
 
     public String placenames[] = {"","RamaKrishna Beach", "Simhachalam", "Yarada Beach", "Kailasgiri Hill Park", "Kambalakonda Wild Life Sanctuary",
-            "Indira Gandhi Zoological Park", "RushiKonda Beach", "Vuda Park", "City Central Park", "CMR Central", "TU 142 Air Craft Museum" };
+            "Indira Gandhi Zoological Park", "RushiKonda Beach", "Vuda Park", "City Central Park", "CMR Central", "TU 142 Air Craft Museum", "Dolphins Nose" };
 
 
     @Override
@@ -170,6 +170,20 @@ public class Place1Activity extends AppCompatActivity {
             text1.setText("The Park Visakhapatnam Hotel");
             TextView text2 = (TextView) findViewById(R.id.restaurantname);
             text2.setText("Infinity Restaurant");
+        }
+        else if(PlacesFragment.number == 11){
+            TextView txt = (TextView) findViewById(R.id.nameofplace);
+            txt.setText(placenames[12]);
+            ImageView image1 = (ImageView) findViewById(R.id.image1);
+            image1.setImageResource(R.drawable.dol2);
+            ImageView imag2 = (ImageView) findViewById(R.id.image2);
+            imag2.setImageResource(R.drawable.dol1);
+            TextView text = (TextView) findViewById(R.id.textaboutplace);
+            text.setText(R.string.place12);
+            TextView text1 = (TextView) findViewById(R.id.hotelname);
+            text1.setText("Best Western Ramachandra Hotel");
+            TextView text2 = (TextView) findViewById(R.id.restaurantname);
+            text2.setText("Horizon Restaurant");
         }
     }
 }

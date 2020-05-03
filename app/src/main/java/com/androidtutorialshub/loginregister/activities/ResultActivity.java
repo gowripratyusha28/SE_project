@@ -13,12 +13,12 @@ import com.androidtutorialshub.loginregister.activities.TripFragment;
 public class ResultActivity extends AppCompatActivity {
 
     public String placenames[] = {"","RamaKrishna Beach", "Simhachalam", "Yarada Beach", "Kailasgiri Hill Park", "Kambalakonda Wild Life Sanctuary",
-            "Indira Gandhi Zoological Park", "RushiKonda Beach", "Vuda Park", "City Central Park", "CMR Central Mall", "TU 142 Air Craft Museum" };
+            "Indira Gandhi Zoological Park", "RushiKonda Beach", "Vuda Park", "City Central Park", "CMR Central Mall", "TU 142 Air Craft Museum", "Dolphins Nose" };
     public String placeurl[] = {"","google.navigation:q=Ramakrishna+Beach,+Visakhapatnam+India","google.navigation:q=Simhachalam+Devasthanam,+Visakhapatnam+India",
                                 "google.navigation:q=Yarada+Beach,+Visakhapatnam+India","google.navigation:q=Kailsagiri+Park,+Visakhapatnam+India",
                                 "google.navigation:q=Kambalakonda+Wild+Life+Sanctuary,+Visakhapatnam+India","google.navigation:q=Indira+Gandhi+Zoological+Park,+Visakhapatnam+India",
                                 "google.navigation:q=Rushikonda+Beach,+Visakhapatnam+India","google.navigation:q=Vuda+Park,+Visakhapatnam+India",
-                                "google.navigation:q=City+Cantral+Park,+Visakhapatnam+India","google.navigation:q=CMR+Central,+Visakhapatnam+India"};
+                                "google.navigation:q=City+Cantral+Park,+Visakhapatnam+India","google.navigation:q=CMR+Central,+Visakhapatnam+India", "google.navigation:q=Dolphins+Nose,+Visakhapatnam+India"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
