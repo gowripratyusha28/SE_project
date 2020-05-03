@@ -97,5 +97,11 @@
             android:textSize="20sp"
             android:textStyle="italic" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click"
+            android:onClick="Click"/>
+
     </LinearLayout>
 </ScrollView>

@@ -44,6 +44,7 @@ public class TripFragment extends Fragment {
     private int mCategory;
 
     public static int cost1;
+    public static int[] placesorder;
 
     public TripFragment() {
         // Required empty public constructor
@@ -163,7 +164,7 @@ public class TripFragment extends Fragment {
                         }
                     }
                 }
-                int[] placesorder = new int[num_of_nodes+1];
+                placesorder = new int[num_of_nodes+1];
                 int cost = 0, time = 0;
                 TSPNearestNeighbour tspNearestNeighbour = new TSPNearestNeighbour();
                 placesorder = tspNearestNeighbour.tsp(new_adj,nodes);
@@ -174,7 +175,7 @@ public class TripFragment extends Fragment {
 
                 for(i=1;i<=num_of_nodes;i++){
                     if(i!=num_of_nodes) {
-                        cost += cost_matrix[nodes[i]][nodes[i + 1]];
+                        cost += cost_matrix[placesorder[i]][placesorder[i + 1]];
                         time += time_matrix[nodes[i]][nodes[i+1]];
                     }
                 }

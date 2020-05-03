@@ -1,7 +1,10 @@
 package com.androidtutorialshub.loginregister.activities;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.androidtutorialshub.loginregister.R;
@@ -9,12 +12,19 @@ import com.androidtutorialshub.loginregister.activities.TripFragment;
 
 public class ResultActivity extends AppCompatActivity {
 
+    public int[] places = TripFragment.placesorder;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+        String msg = null;
+        int i;
+        for(i=1;i< places.length;i++){
+            msg = i + "." + places[i] + "\n";
+        }
         TextView text = (TextView) findViewById(R.id.displayorder);
-        text.setText(TripFragment.message);
+        text.setText(msg);
         TextView text2 = (TextView) findViewById(R.id.totalcost);
         text2.setText(TripFragment.totalcost);
         TextView text3 = (TextView) findViewById(R.id.totaltime);
@@ -26,4 +36,12 @@ public class ResultActivity extends AppCompatActivity {
         TextView text6 = (TextView) findViewById(R.id.totaltime1);
         text6.setText(TripFragment.totaltime);
     }
+
+    public void Click(View view){
+        Uri gmmIntentUri = Uri.parse("google.navigation:q=Taronga+Zoo,+Sydney+Australia");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
+    }
+
 }
