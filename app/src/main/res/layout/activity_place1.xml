@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- XML file to show description about places -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECEFF1">
 
+    <!-- Linear Layout is used -->
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,6 +14,7 @@
         android:padding="15dp"
         tools:context=".activities.Place1Activity">
 
+        <!-- text view for heading name of place -->
         <TextView
             android:id="@+id/nameofplace"
             android:layout_width="wrap_content"
@@ -21,6 +24,7 @@
             android:textStyle="italic"
             tools:text="PlaceName" />
 
+        <!-- text view for heading photos -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,18 +33,21 @@
             android:textSize="19sp"
             android:textStyle="italic" />
 
+        <!-- Linear layout to attach two images horizontally -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
+            <!-- first image view -->
             <ImageView
                 android:id="@+id/image1"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1" />
 
+            <!-- second image view -->
             <ImageView
                 android:id="@+id/image2"
                 android:layout_width="0dp"
@@ -49,6 +56,7 @@
 
         </LinearLayout>
 
+        <!-- text view for heading about -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,6 +65,7 @@
             android:textSize="19sp"
             android:textStyle="italic" />
 
+        <!-- text view to describe the string about of the place -->
         <TextView
             android:id="@+id/textaboutplace"
             android:layout_width="match_parent"
@@ -65,6 +74,7 @@
             android:textSize="17sp"
             android:textStyle="italic" />
 
+        <!-- text view for the heading near by -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,6 +83,7 @@
             android:textSize="19sp"
             android:textStyle="italic" />
 
+        <!-- linear layout to describe the hotel -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,6 +106,7 @@
 
         </LinearLayout>
 
+        <!-- linear layout to describe the restaurant -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

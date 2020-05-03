@@ -51,7 +51,7 @@ public class TripFragment extends Fragment {
     }
 
 
-    public String placenames[] = {"","RadhaKrishnan Beach", "Simhachalam", "Yarada Beach", "Kailasgiri Hill Park", "Kambalakonda Wild Life Sanctuary",
+    public String placenames[] = {"","RamaKrishna Beach", "Simhachalam", "Yarada Beach", "Kailasgiri Hill Park", "Kambalakonda Wild Life Sanctuary",
             "Indira Gandhi Zoological Park", "RushiKonda Beach", "Vuda Park", "City Central Park", "CMR Central Mall", "TU 142 Air Craft Museum" };
 
         @Override

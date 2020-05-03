@@ -9,13 +9,14 @@
     android:background="#4e0d3a"
     android:orientation="vertical">
 
+    <!--Tab layout -->
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
         style="@style/CategoryTab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-
+    <!-- View Pager -->
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"

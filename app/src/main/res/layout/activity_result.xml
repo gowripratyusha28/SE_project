@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!-- XML file to show the result of the algorithms -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFEBE9">
 
+    <!-- Linear layout to show the suggestions -->
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,6 +14,7 @@
         android:padding="30dp"
         tools:context=".activities.ResultActivity">
 
+        <!-- For suggestion 1 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,6 +60,7 @@
             android:layout_marginBottom="15dp"
             android:background="#4e0d3a" />
 
+        <!-- For suggestion 2 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,14 +96,19 @@
             android:id="@+id/totaltime1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="25dp"
             android:textSize="20sp"
             android:textStyle="italic" />
 
         <Button
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="click"
+            android:text="Start journey"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textColor="#FFFFFF"
+            android:background="#4e0d3a"
             android:onClick="Click"/>
 
     </LinearLayout>
