@@ -42,14 +42,19 @@ public class NewPlaceFragment extends Fragment {
             {
                 EditText nameedittext = (EditText) view.findViewById(R.id.name_edittext);
                 String name = nameedittext.getText().toString();
+                nameedittext.setText(null);
                 EditText emailedittext = (EditText) view.findViewById(R.id.email_edittext);
                 String email = emailedittext.getText().toString();
+                emailedittext.setText(null);
                 EditText placeedittext = (EditText) view.findViewById(R.id.placename_edittext);
                 String place = placeedittext.getText().toString();
+                placeedittext.setText(null);
                 EditText specification = (EditText) view.findViewById(R.id.specification);
                 String spec = specification.getText().toString();
+                specification.setText(null);
                 EditText comments = (EditText) view.findViewById(R.id.comments);
                 String comment = comments.getText().toString();
+                comments.setText(null);
 
                 String subject = "Add new place to Travel With Us";
 

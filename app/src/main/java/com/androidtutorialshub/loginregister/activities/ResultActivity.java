@@ -17,5 +17,13 @@ public class ResultActivity extends AppCompatActivity {
         text.setText(TripFragment.message);
         TextView text2 = (TextView) findViewById(R.id.totalcost);
         text2.setText(TripFragment.totalcost);
+        TextView text3 = (TextView) findViewById(R.id.totaltime);
+        text3.setText(TripFragment.totaltime);
+        TextView text4 = (TextView) findViewById(R.id.displayorder1);
+        text4.setText(TripFragment.message1);
+        TextView text5 = (TextView) findViewById(R.id.totalcost1);
+        text5.setText(TripFragment.totalcost);
+        TextView text6 = (TextView) findViewById(R.id.totaltime1);
+        text6.setText(TripFragment.totaltime);
     }
 }

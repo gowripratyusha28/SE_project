@@ -1,9 +1,12 @@
 package com.androidtutorialshub.loginregister.activities;
 
 import android.content.Context;
+import android.media.Image;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.widget.TableLayout;
 
 import com.androidtutorialshub.loginregister.R;
 
@@ -24,11 +27,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         }
         else if(position == 1){
             return new NewPlaceFragment();
-        } else {
+        } else if(position == 2){
             return new TripFragment();
-        } /*else {
-            return new PhrasesFragment();
-        }*/
+        } else if(position == 3){
+            return new FeedbackFragment();
+        }else{
+            return new TranslatorFragment();
+        }
     }
 
     /**
@@ -36,7 +41,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 3;
+        return 5;
     }
 
     @Override
@@ -46,9 +51,14 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         } else if(position == 1){
             return mContext.getString(R.string.category_newplace);
         }
-        else{
+        else if(position == 2){
             return mContext.getString(R.string.trip);
         }
-
+        else if(position == 3){
+            return mContext.getString(R.string.feedback);
+        }
+        else{
+            return mContext.getString(R.string.translate);
+        }
     }
 }

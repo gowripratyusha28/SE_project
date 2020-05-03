@@ -1,6 +1,7 @@
 package com.androidtutorialshub.loginregister.activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -10,11 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.androidtutorialshub.loginregister.R;
 
 import java.util.ArrayList;
+
+import static com.androidtutorialshub.loginregister.R.layout.activity_place1;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,27 +28,32 @@ import java.util.ArrayList;
  */
 public class PlacesFragment extends Fragment {
 
+    public static int number;
+
     public PlacesFragment() {
         // Required empty public constructor
     }
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
 
         // Create a list of words
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Araku Valley",  R.drawable.aruku));
-        words.add(new Word("Borra Caves",  R.drawable.logo));
-        words.add(new Word("Simhachalam temple",  R.drawable.logo));
-        words.add(new Word("Yarada Beach",  R.drawable.logo));
-        words.add(new Word("Kailasgiri Hill Park",  R.drawable.logo));
-        words.add(new Word("Kamabalakonda sanctuary",  R.drawable.logo));
-        words.add(new Word("R.K.Beach",  R.drawable.logo));
-        words.add(new Word("Indira Gandhi Zoological Park",  R.drawable.logo));
+        words.add(new Word("R.K.Beach",  R.drawable.rk1));
+        words.add(new Word("Simhachalam",  R.drawable.simhachalam2));
+        words.add(new Word("Yarada Beach",  R.drawable.yarada1));
+        words.add(new Word("Kailasgiri Hill Park",  R.drawable.kh1));
+        words.add(new Word("Kamabalakonda sanctuary",  R.drawable.kws2));
+        words.add(new Word("Indira Gandhi Zoological Park",  R.drawable.ig1));
+        words.add(new Word("Rushikonda Beach",R.drawable.rushi1));
+        words.add(new Word("Vuda Park",R.drawable.vuda1));
+        words.add(new Word("City Central Park",R.drawable.ccp2));
+        words.add(new Word("CMR Central",R.drawable.cmr1));
+        words.add(new Word("TU 142 Air Craft Museum",R.drawable.air1));
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
         WordAdapter adapter = new WordAdapter(getActivity(), words);
@@ -63,6 +73,10 @@ public class PlacesFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // Release the media player if it currently exists because we are about to
                 // play a different sound file
+
+                Intent intent = new Intent(getContext(),Place1Activity.class);
+                startActivity(intent);
+                number = position;
 
             }
         });

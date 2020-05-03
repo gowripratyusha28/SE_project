@@ -1,4 +1,5 @@
 package com.androidtutorialshub.loginregister.activities;
+/**java file for registration activity**/
 
 import android.app.Activity;
 import android.content.Intent;
@@ -20,9 +21,6 @@ import com.androidtutorialshub.loginregister.helpers.InputValidation;
 import com.androidtutorialshub.loginregister.model.User;
 import com.androidtutorialshub.loginregister.sql.DatabaseHelper;
 
-/**
- * Created by lalit on 8/27/2016.
- */
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private final AppCompatActivity activity = RegisterActivity.this;
@@ -45,6 +43,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private InputValidation inputValidation;
     private DatabaseHelper databaseHelper;
     private User user;
+    public static String name;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -139,6 +138,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         }
 
         if (!databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim())) {
+            name = textInputEditTextName.getText().toString().trim();
 
             user.setName(textInputEditTextName.getText().toString().trim());
             user.setEmail(textInputEditTextEmail.getText().toString().trim());
@@ -149,9 +149,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             // Snack Bar to show success message that record saved successfully
             Snackbar.make(nestedScrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
             emptyInputEditText();
+            Toast toastmessage = Toast.makeText(getApplicationContext(), "Registration successful", Toast.LENGTH_SHORT);
+            toastmessage.show();
             Intent intentLogin = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(intentLogin);
-            Toast toastmessage = Toast.makeText(this,"Registration successful",Toast.LENGTH_SHORT);
 
         } else {
             // Snack Bar to show error message that record already exists

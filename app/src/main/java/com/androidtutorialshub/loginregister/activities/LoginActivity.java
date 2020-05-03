@@ -1,4 +1,5 @@
 package com.androidtutorialshub.loginregister.activities;
+/**java file for login activity**/
 
 import android.content.Intent;
 import android.os.Bundle;

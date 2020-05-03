@@ -8,8 +8,11 @@
         android:label="Travel With Us"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.ResultActivity"></activity>
-        <activity android:name=".activities.MainActivity"></activity>
+        <activity android:name=".activities.Place1Activity">
+
+        </activity>
+        <activity android:name=".activities.ResultActivity" />
+        <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.RegisterActivity" android:parentActivityName=".activities.LoginActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LoginActivity" />
+        </activity>
         <activity android:name=".activities.UsersListActivity" />
     </application>
 
