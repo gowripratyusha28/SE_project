@@ -16,7 +16,9 @@ Installation in mobile using USB:
 6. Fork this repository into your github account.(In Laptop)
 7. Import into android studio using import project via Git version control.(File -> New -> Project from version control -> Git) (In Laptop) 
 8. Give the URL of the forked repository. (In laptop)
-OR 
+
+OR
+
 9. Download the zip file and extract it.
 10. Import into android studio using import project and select the folder.(File -> New -> Import project -> Select the folder)
 
