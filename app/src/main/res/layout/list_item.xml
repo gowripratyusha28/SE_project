@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- XML file to show the item should like in places fragment -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="20dp"
-    android:background="#EFEBE9">
+    android:background="#E0E0E0">
 
-    <RelativeLayout
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -31,7 +31,37 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/image"/>
+        android:id="@+id/image"/>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cardshape"
+        card_view:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/cardshape">
+
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/image"
+                android:src="@drawable/air1"/>
+
+            <TextView
+                android:layout_below="@id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borra Caves"
+                android:id="@+id/placeName" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
 
 </LinearLayout>

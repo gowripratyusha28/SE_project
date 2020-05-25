@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LoginRegister.iml" filepath="$PROJECT_DIR$/LoginRegister.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SE_project.iml" filepath="$PROJECT_DIR$/SE_project.iml" group="SE_project" />
+      <module fileurl="file://$PROJECT_DIR$/app/SE_project-app.iml" filepath="$PROJECT_DIR$/app/SE_project-app.iml" group="SE_project/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/travelwtihus.iml" filepath="$PROJECT_DIR$/travelwtihus.iml" group="travelwtihus" />
       <module fileurl="file://$PROJECT_DIR$/app/travelwtihus-app.iml" filepath="$PROJECT_DIR$/app/travelwtihus-app.iml" group="travelwtihus/app" />
