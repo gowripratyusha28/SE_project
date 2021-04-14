@@ -5,13 +5,11 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
-        android:label="Travel With Us"
+        android:label="Covid Vaccine"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.Place1Activity">
-
-        </activity>
-        <activity android:name=".activities.ResultActivity" />
+        <activity android:name=".activities.FeedbackActivity"></activity>
+        <activity android:name=".activities.HospActivity" />
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.LoginActivity">
             <intent-filter>
@@ -20,7 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.RegisterActivity" android:parentActivityName=".activities.LoginActivity">
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:parentActivityName=".activities.LoginActivity">
+
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

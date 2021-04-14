@@ -3,8 +3,11 @@
     <string name="text_accounts">All Accounts</string>
     <string name="hint_name">Name</string>
     <string name="hint_email">Email</string>
+    <string name="hint_age">Age</string>
     <string name="hint_password">Password</string>
     <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_hospname">Hospital Name</string>
+    <string name="hint_hospid">Hospital Id</string>
     <string name="text_login">Login</string>
     <string name="text_register">Register</string>
     <string name="error_message_name">Enter Full Name</string>
@@ -20,31 +23,6 @@
     <string name="action_settings">Settings</string>
     <string name="text_hello">Hello,</string>
     <string name="text_title">Android Tutorials Hub</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="category_places">Places</string>
-
-    <string name="category_newplace">Add New Place</string>
-
-    <string name="trip">Trip</string>
-
-    <string name="feedback">Feedback</string>
-
-    <string name="translate">Translate</string>
-
-    <!-- About places -->
-    <string name="place1">"At a distance of 4 km from Vizag Railway Station,Ramakrishna Beach (also called RK Beach) is a spectacular long beach on Bay of Bengal.This is one of the most popular beaches in Visakhapatnam and gets its name from the Ramakrishna Mission ashram across the Beach Road from the park. Ramakrishna Beach is one of the prime attractions of Vizag city."</string>
-    <string name="place2">"The Sri Varaha Lakshmi Narasimha temple, Simhachalam is a Hindu temple situated on the Simhachalam hill, which is 300 metres above the sea level in Visakhapatnam, Andhra Pradesh. It is dedicated to one of the Hindu trinity deities Vishnu, who is worshipped there as Varaha Narasimha.Simhachalam is one of the 32 Narasimha temples in Andhra Pradesh which are important pilgrimage centres"</string>
-    <string name="place3">"Yarada Beach is situated on the west coast of Bay of Bengal in Yarada, a village at a distance of 15 kilometres (9.3 mi) from Visakhapatnam. It is located near Gangavaram beach, Dolphin's Nose, and Gangavaram Port. This is a very picturesque beach in Andhra pradesh. It is a less crowded beach and beautiful. It is a bit isolated. It  is a well-maintained beach in India at present and has a calm atmosphere for all age groups"</string>
-    <string name="place4">"Kailasagiri is a hilltop park in the city of Visakhapatnam in the Indian state of Andhra Pradesh. The park was developed by the Visakhapatnam Metropolitan Region Development Authority (VMRDA) and comprises 380 acres (150 ha) of land covered with flora and tropical trees. The hill, at 173 metres (568 ft), overlooks the city of Visakhapatnam. A cable car connects to the top of the hill, the first of its kind in Andhra Pradesh."</string>
-    <string name="place5">"Kambalakonda Wildlife Sanctuary is a vast forest reserve located near Vishakapatnam, Andhra Pradesh, covering an area of seventeen thousand acres. With lush green foliage covering the terrain, the sanctuary is a great place for trekking and hiking while also making it sustainable for wildlife at the same time.People looking for an alternative tourist experience can also try out adventure sports in the area or visit the Kambalakonda Wildlife Eco Park."</string>
-    <string name="place6">"The zoo park is about 11 kilometres (6.8 mi) from the Visakhapatnam railway station on the National Highway 5 near Madhurawada. It has entrance and exit gates situated oppositely, with one towards National Highway 5 and the other towards Beach Road at Sagar Nagar. It is open to public daily except Monday.  Nearly eighty species of animals numbering to about eight hundred are present in the zoo."</string>
-    <string name="place7">"Rushikonda beach is widely known for its golden sands and tidy waves of Bay of Bengal. Surrounded by green plants, Rushikonda beach looks picture perfect attracting nature lovers in huge numbers. With its vast stretch of waters, Rushikonda beach is the perfect place to enjoy water sports like swimming, water skiing and wind surfing.Known as one of the virgin beaches of South India"</string>
-    <string name="place8">"Sprawling over 55 acres, VUDA park is developed by Visakhapatnam Urban Development Authority and is situated quite close to Ramakrishna beach, another popular tourist attraction in Vizag. VUDA park is one of the most attractive tourist spots in Vizag. With 37 acres covered with beautiful lawns, over 2500 shady trees, a variety of species of flower plants; VUDA park attracts nature lovers in huge numbers."</string>
-    <string name="place9">"A must-visit destination for couples and families with children, the park has astonishing lawns, over 3000 shady trees and 50 plus varieties of plants and herbs that make it look unique and different from other amusement and entertainment parks in Visakhapatnam. Perfect for a half day excursion, the city central park is considered as a good place to spend some quality time together on the weekends. "</string>
-    <string name="place10">"The CMR Central Shopping Mall by CB Group at Visakhapatnam with a built up area of 72000 Sft is Spread over 5 floors on the land ad-measuring about 3000 Sq. Yards.This Shopping Mall offers vide variety of jeweler, silk sarees (Ground Floor), General and cotton Sarees (First Floor), Readymades and branded items, suitings, shirtings (Second Floor), Gifts, Novelties, leather goods, cosmetics (third Floor) and Food courts and entertainment with the 4 Screen INOX Multiplex(fourth Floor)."</string>
-    <string name="place11">"It is a preserved Tupolev Tu-142 located in Visakhapatnam.This aircraft served 29 years with the Indian Navy and had 30,000 hours of accident-free flying. It has a audio guide which provide self explanation based on the number.This feature should also be implemented in Submarine museum.This aircraft museum is really a pride to watch and a good learning experience."</string>
-    <string name="place12">" Very similar to a dolphins nose, this 174 m high rocky headland is situated in the south of Vizag. The nose seems to be protruding out towards the Bay of Bengal giving it a rather fascinating look.A renowned powerful light house highly useful for the shippers and has a light beam that can be seen as far as 64 km out at sea is also placed nearby. There is also a hill nearby named the Dolphin hill and is a restricted Armed forces residential area. "</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

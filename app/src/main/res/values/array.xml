@@ -7,18 +7,9 @@
     </string-array>
 
     <string-array name="place_options">
-        <item>"R.K.Beach"</item>
-        <item>"Simhachalam"</item>
-        <item>"Yarada Beach"</item>
-        <item>"Kailasgiri Hill Park"</item>
-        <item>"Kambalakonda Wild Life Sanctuary"</item>
-        <item>"Indira Gandhi Zoological Park"</item>
-        <item>"Rishikonda Beach"</item>
-        <item>"Vuda Park"</item>
-        <item>"City Central Park"</item>
-        <item>"CMR Central"</item>
-        <item>"Air Craft Museum"</item>
-        <item>"Dolphins Nose"</item>
+        <item>"1"</item>
+        <item>"2</item>
+        <item>"3"</item>
     </string-array>
 
 </resources>

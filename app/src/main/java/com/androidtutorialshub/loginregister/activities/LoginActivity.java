@@ -1,6 +1,7 @@
 package com.androidtutorialshub.loginregister.activities;
 /**java file for login activity**/
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -124,6 +125,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             emptyInputEditText();
             startActivity(accountsIntent);*/
             Intent mainIntent = new Intent(activity,MainActivity.class);
+            String email = textInputEditTextEmail.getText().toString().trim();
+            mainIntent.putExtra("EMAIL",email);
             emptyInputEditText();
             startActivity(mainIntent);
 

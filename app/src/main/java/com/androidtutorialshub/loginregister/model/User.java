@@ -6,6 +6,8 @@ public class User {
     private String name;
     private String email;
     private String password;
+    private String age;
+    private String hosp;
 
     public int getId() {
         return id;
@@ -23,6 +25,14 @@ public class User {
         this.name = name;
     }
 
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -37,5 +47,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getHosp() {
+        return hosp;
+    }
+
+    public void setHosp(String hosp) {
+        this.hosp = hosp;
     }
 }
